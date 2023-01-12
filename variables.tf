@@ -1,7 +1,7 @@
 locals {
-  ami               = "ami-0a606d8395a538502"
-  instance_type     = "t2.micro"
-  my_vpc            = "vpc-ad8920c6"
+  ami                 = "ami-0a606d8395a538502"
+  instance_type       = "t2.micro"
+  my_vpc              = "vpc-ad8920c6"
   my_security_groupid = "sg-012abdb6ef7b3f900"
 }
 
