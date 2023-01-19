@@ -25,3 +25,9 @@ output "security_group" {
   value       = aws_security_group.demo-sg.id
   description = "SG ID"
 }
+
+output "key_pair_id" {
+
+  value = aws_key_pair.labkey.id
+  description = "New key pair ID"
+}
