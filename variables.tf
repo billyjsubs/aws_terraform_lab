@@ -1,8 +1,9 @@
 locals {
-  ami                 = "ami-0a606d8395a538502"
-  instance_type       = "t2.micro"
-  my_vpc              = "vpc-ad8920c6"
-  my_security_groupid = "sg-012abdb6ef7b3f900"
+  ami           = "ami-0a606d8395a538502"
+  instance_type = "t2.micro"
+  my_vpc        = "vpc-ad8920c6"
+  # my_security_groupid = "sg-012abdb6ef7b3f900"
+  my_security_groupid = aws_security_group.demo-sg.id
 }
 
 output "public_ip" {
