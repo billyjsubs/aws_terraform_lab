@@ -10,5 +10,8 @@ resource "aws_instance" "amazonlinux" {
     Name = "My amazon-linux EC2 micro instance",
 
   }
-
+  depends_on = [
+    aws_key_pair.my_new_key
+  ]
 }
+
